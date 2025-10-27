@@ -42,11 +42,7 @@
           feito.
         </p>
         <div class="contornoForm">
-          <form
-            class="formObrigatoriedades"
-            action="./js/controleObrigatorios.js"
-            method="GET"
-          >
+          <form class="formObrigatoriedades">
             <input
               type="checkbox"
               id="ideiaCentral"
@@ -93,172 +89,164 @@
           </form>
         </div>
       </section>
-      <section id="desenvolvimento">
-        <h2>A nível de desenvolvimento</h2>
-        <p>
-          Analise tudo em relação ao desenvolvimento do projeto de vocês e
-          assinalem o que já está feito.
-        </p>
-        <div class="formsDesenvolvimento">
-          <div class="contornoForm">
-            <h2>Estrutura e HTML</h2>
+    </div>
+    <section id="desenvolvimento">
+      <h2>A nível de desenvolvimento</h2>
+      <p>
+        Analise tudo em relação ao desenvolvimento do projeto de vocês e
+        assinalem o que já está feito.
+      </p>
+      <div class="formsDesenvolvimento">
+        <div class="contornoForm">
+          <h2>Estrutura e HTML</h2>
 
-            <form
-              class="formObrigatoriedades"
-              action="./js/controleObrigatorios.js"
-              method="GET"
+          <form class="formObrigatoriedades">
+            <input
+              type="checkbox"
+              id="ideiaCentral"
+              name="aspectosprojeto"
+              value="ideiaCentral"
+            />
+            <label for="ideiaCentral"
+              >Uso de tags como header, main, footer, etc</label
+            ><br />
+
+            <input
+              type="checkbox"
+              id="menuNavObg"
+              name="aspectosprojeto"
+              value="menuNavObg"
+            />
+            <label for="menuNavObg">Menu de navegação</label><br />
+
+            <input
+              type="checkbox"
+              id="secaoDivObg"
+              name="aspectosprojeto"
+              value="secaoDivObg"
+            />
+            <label for="secaoDivObg"
+              >Seções estruturadas com section e div</label
             >
-              <input
-                type="checkbox"
-                id="ideiaCentral"
-                name="aspectosprojeto"
-                value="ideiaCentral"
-              />
-              <label for="ideiaCentral"
-                >Uso de tags como header, main, footer, etc</label
-              ><br />
-
-              <input
-                type="checkbox"
-                id="menuNavObg"
-                name="aspectosprojeto"
-                value="menuNavObg"
-              />
-              <label for="menuNavObg">Menu de navegação</label><br />
-
-              <input
-                type="checkbox"
-                id="secaoDivObg"
-                name="aspectosprojeto"
-                value="secaoDivObg"
-              />
-              <label for="secaoDivObg"
-                >Seções estruturadas com section e div</label
-              >
-              <br />
-              <input
-                type="checkbox"
-                id="EstruturaFormObg"
-                name="aspectosprojeto"
-                value="EstruturaFormObg"
-              />
-              <label for="EstruturaFormObg">Formulário implementado</label>
-              <br />
-              <input
-                type="checkbox"
-                id="atributosFormObg"
-                name="aspectosprojeto"
-                value="atributosFormObg"
-              />
-              <label for="atributosFormObg">
-                Atributos obrigatórios em formulários (name, id, required, etc.)
-              </label>
-              <br />
-              <input class="btnForm" type="submit" value="Enviar" />
-            </form>
-          </div>
-          <div class="contornoForm">
-            <h2>Estilização e Funcionalidades</h2>
-            <form
-              class="formObrigatoriedades"
-              action="./js/controleObrigatorios.js"
-              method="GET"
-            >
-              <input
-                type="checkbox"
-                id="cssLinkado"
-                name="desenvolvimento"
-                value="cssLinkado"
-              />
-              <label for="cssLinkado"
-                >Arquivo CSS externo linkado corretamente</label
-              ><br />
-
-              <input
-                type="checkbox"
-                id="padraoCores"
-                name="desenvolvimento"
-                value="padraoCores"
-              />
-              <label for="padraoCores">Padrão de cores e fontes definido</label
-              ><br />
-
-              <input
-                type="checkbox"
-                id="jsFuncionalidades"
-                name="desenvolvimento"
-                value="jsFuncionalidades"
-              />
-              <label for="jsFuncionalidades"
-                >Funcionalidades em JavaScript implementadas</label
-              ><br />
-
-              <input
-                type="checkbox"
-                id="acessibilidade"
-                name="desenvolvimento"
-                value="acessibilidade"
-              />
-              <label for="acessibilidade"
-                >Boas práticas de acessibilidade aplicadas (alt, labels,
-                contraste)</label
-              ><br />
-
-              <input
-                type="checkbox"
-                id="organizacaoCodigo"
-                name="desenvolvimento"
-                value="organizacaoCodigo"
-              />
-              <label for="organizacaoCodigo"
-                >Código bem indentado e comentado</label
-              ><br />
-
-              <input class="btnForm" type="submit" value="Enviar" />
-            </form>
-          </div>
+            <br />
+            <input
+              type="checkbox"
+              id="EstruturaFormObg"
+              name="aspectosprojeto"
+              value="EstruturaFormObg"
+            />
+            <label for="EstruturaFormObg">Formulário implementado</label>
+            <br />
+            <input
+              type="checkbox"
+              id="atributosFormObg"
+              name="aspectosprojeto"
+              value="atributosFormObg"
+            />
+            <label for="atributosFormObg">
+              Atributos obrigatórios em formulários (name, id, required, etc.)
+            </label>
+            <br />
+            <input class="btnForm" type="submit" value="Enviar" />
+          </form>
         </div>
-      </section>
-      <footer class="footer">
-        <div class="footer-container">
-          <div class="footer-section">
-            <h3>Your Code</h3>
-            <p>
-              De dev para dev — Aprendizado, dicas e boas práticas em
-              programação e design.
-            </p>
-          </div>
-          <div class="footer-section">
-            <h3>Links rápidos</h3>
-            <ul>
-              <li><a href="index.html">Início</a></li>
-              <li><a href="ideia.html">A ideia</a></li>
-              <li><a href="design.html">Design</a></li>
-              <li><a href="obrigatorio.html">Obrigatório</a></li>
-              <li><a href="dicas.html">Dicas</a></li>
-            </ul>
-          </div>
-          <div class="footer-section">
-            <h3>Contatos</h3>
-            <div class="social-icons">
-              <a href="https://www.linkedin.com/in/karina-yumi/"
-                ><img src="./img/linkedinLogo.png" alt="Linkedin"
-              /></a>
-              <a href="https://www.instagram.com/yumininaa/"
-                ><img src="./img/instaLogo.png" alt="Instagram"
-              /></a>
-              <a href="mailto:karinayumifp@gmail.com"
-                ><img src="./img/gmailLogo.png" alt="Gmail"
-              /></a>
-            </div>
-          </div>
+        <div class="contornoForm">
+          <h2>Estilização e Funcionalidades</h2>
+          <form class="formObrigatoriedades">
+            <input
+              type="checkbox"
+              id="cssLinkado"
+              name="desenvolvimento"
+              value="cssLinkado"
+            />
+            <label for="cssLinkado"
+              >Arquivo CSS externo linkado corretamente</label
+            ><br />
+
+            <input
+              type="checkbox"
+              id="padraoCores"
+              name="desenvolvimento"
+              value="padraoCores"
+            />
+            <label for="padraoCores">Padrão de cores e fontes definido</label
+            ><br />
+
+            <input
+              type="checkbox"
+              id="jsFuncionalidades"
+              name="desenvolvimento"
+              value="jsFuncionalidades"
+            />
+            <label for="jsFuncionalidades"
+              >Funcionalidades em JavaScript implementadas</label
+            ><br />
+
+            <input
+              type="checkbox"
+              id="acessibilidade"
+              name="desenvolvimento"
+              value="acessibilidade"
+            />
+            <label for="acessibilidade"
+              >Boas práticas de acessibilidade aplicadas (alt, labels,
+              contraste)</label
+            ><br />
+
+            <input
+              type="checkbox"
+              id="organizacaoCodigo"
+              name="desenvolvimento"
+              value="organizacaoCodigo"
+            />
+            <label for="organizacaoCodigo"
+              >Código bem indentado e comentado</label
+            ><br />
+
+            <input class="btnForm" type="submit" value="Enviar" />
+          </form>
         </div>
-        <div class="footer-bottom">
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Your Code</h3>
           <p>
-            © 2025 Guia de Desenvolvimento Web. Todos os direitos reservados.
+            De dev para dev — Aprendizado, dicas e boas práticas em programação
+            e design.
           </p>
         </div>
-      </footer>
-    </div>
+        <div class="footer-section">
+          <h3>Links rápidos</h3>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="ideia.html">A ideia</a></li>
+            <li><a href="design.html">Design</a></li>
+            <li><a href="obrigatorio.html">Obrigatório</a></li>
+            <li><a href="dicas.html">Dicas</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contatos</h3>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/karina-yumi/"
+              ><img src="./img/linkedinLogo.png" alt="Linkedin"
+            /></a>
+            <a href="https://www.instagram.com/yumininaa/"
+              ><img src="./img/instaLogo.png" alt="Instagram"
+            /></a>
+            <a href="mailto:karinayumifp@gmail.com"
+              ><img src="./img/gmailLogo.png" alt="Gmail"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 YourCode. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <script src="./js/controleObrigatorios.js"></script>
   </body>
 </html>

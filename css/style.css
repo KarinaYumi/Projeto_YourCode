@@ -2,7 +2,7 @@ body {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   margin: 0;
-  padding: 0%;
+  padding: 0;
   line-height: 1.5; /* aumenta o espaçamento/altura entre as linhas */
 }
 
@@ -12,9 +12,20 @@ h1 {
   text-align: center;
   color: #f9a826;
 }
+h2 {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+hr {
+  border: none;
+  width: 80%;
+  border-top: 2px dotted rgba(0, 0, 0, 0.3);
+  margin: 20px auto;
+  margin-bottom: 3%;
+}
 
 .container {
-  margin: 6% 0% 0% 0%;
+  padding: 6% 5% 0% 5%;
 }
 
 /* Menu - Navbar  */
@@ -110,6 +121,7 @@ h1 {
   align-items: center;
   justify-content: center;
   padding: 1%;
+  gap: 90px;
 }
 
 .sobreProjeto .textoProjeto {
@@ -118,7 +130,6 @@ h1 {
   max-width: 700px;
   font-size: 1.2em;
   text-align: justify;
-  padding-right: 4%;
 }
 
 .fraseProjetoImpacto {
@@ -135,7 +146,7 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-align: justify;
-  padding: 0% 5%;
+  padding: 0;
 }
 .secaoPerguntasIdeias p {
   margin-bottom: 1%;
@@ -165,15 +176,19 @@ h1 {
 }
 
 .introducaoRecomendacao {
-  padding: 0% 10% 4%;
   font-size: 1.2em;
   text-align: justify;
+}
+
+.introducaoRecomendacao p {
+  padding-bottom: 1%;
 }
 .secaoRecomendacoes {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 120px;
+  padding: 1% 0 0 0;
   margin-bottom: 50px;
 }
 
@@ -208,7 +223,8 @@ h1 {
   height: 60px;
   border-radius: 50%;
   font-size: 1.4em;
-  background-color: #f9a826;
+  background-color: #1f1f3e;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -286,10 +302,14 @@ h1 {
 
 #desenvolvimento {
   background-color: #1f1f3e;
-  width: 100%;
+  padding: 0;
   height: auto;
+  border-radius: 5%;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.301);
+  padding: 0 5% 0% 5%;
+  margin-bottom: 4%;
+  text-align: center;
 }
-
 #desenvolvimento h2 {
   color: #ffffff;
   font-family: "Bebas Neue", sans-serif;
@@ -306,15 +326,151 @@ h1 {
   display: flex;
   justify-content: center;
 }
+
+/* Tela - Dicas */
+
+.cardsDicas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  margin-bottom: 3%;
+  text-align: justify;
+}
+
+.cardsDicas h2 {
+  font-family: "Bebas Neue", sans-serif;
+  text-align: center;
+  padding-top: 5%;
+  margin: 0;
+}
+
+.cardsDicas img {
+  width: 120px;
+  height: auto;
+  border-radius: 5%;
+}
+
+.dicaIA img:hover {
+  width: 400px;
+  height: auto;
+}
+
+.cardsDicas legend {
+  color: #ffffff3a;
+  font-size: 0.7em;
+}
+
+.dicaIA,
+.dicaConteudo,
+.dicaSitesPessoais {
+  max-height: 450px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.dicaIA::-webkit-scrollbar,
+.dicaConteudo::-webkit-scrollbar,
+.dicaSitesPessoais::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dicaIA::-webkit-scrollbar-thumb,
+.dicaConteudo::-webkit-scrollbar-thumb,
+.dicaSitesPessoais::-webkit-scrollbar-thumb {
+  background-color: #f9a826;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.dicaIA::-webkit-scrollbar-thumb:hover,
+.dicaConteudo::-webkit-scrollbar-thumb:hover,
+.dicaSitesPessoais::-webkit-scrollbar-thumb:hover {
+  background-color: #f9c946;
+}
+
+.dicaIA {
+  width: 600px;
+  height: auto;
+  background-color: #1f1f3e;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 10%;
+  padding: 0% 2% 2% 2%;
+}
+
+.dicaIA p {
+  text-align: justify;
+}
+
+.dicaSitesPessoais {
+  width: 600px;
+  background-color: #f9a826;
+  color: #ffffff;
+  border-radius: 10%;
+  padding: 0% 2% 2% 2%;
+}
+.dicaConteudo {
+  width: 600px;
+  background-color: #1f1f3e;
+  color: #ffffff;
+  border-radius: 10%;
+  padding: 0% 2% 2% 2%;
+}
+
+.dicaConteudo div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dicaConteudo img {
+  border-radius: 50%;
+  padding: 10px 5px 0 0;
+}
+
+.conteudos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.cardConteudo {
+  text-align: center;
+  width: 140px;
+}
+
+.cardConteudo img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cardConteudo img:hover {
+  transform: scale(1.05);
+}
+
+.cardConteudo p {
+  font-size: 14px;
+  text-decoration: none;
+  color: #ffffff;
+  margin: 0%;
+}
+
 /*Footer */
 
 .footer {
   background-color: #f9a826;
   color: #ffffff;
-  padding: 0px 0px 10px 0px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  padding-top: 30px;
+  padding: 5px;
+  text-align: center;
 }
 
 .footer-container {
@@ -326,7 +482,7 @@ h1 {
 }
 
 .footer-section {
-  flex: 1 1 250px;
+  flex: 1 1 50px;
   margin: 10px;
 }
 
@@ -334,16 +490,11 @@ h1 {
   font-family: "Bebas Neue", sans-serif;
   font-style: normal;
   color: #1f1f3e;
-  margin-bottom: 15px;
 }
 
 .footer-section ul {
   list-style: none;
   padding: 0;
-}
-
-.footer-section ul li {
-  margin-bottom: 8px;
 }
 
 .footer-section ul li a {
