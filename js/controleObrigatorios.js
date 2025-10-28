@@ -20,6 +20,29 @@ for (var i = 0; i < forms.length; i++) {
       message = "Você não marcou nenhum item!";
     }
 
-    alert(message); //O alert emite a mensagem no navegador
+    alert(message); // O alert emite a mensagem no navegador
   };
 }
+
+// Formulário de contato
+
+const numWhatsapp = "5511911403617";
+
+document.getElementById("formContato").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const nome = document.getElementById("nomeAluno").value;
+  const diaSemana = document.getElementById("DiaSemanaSelecionado").value;
+  const mensagem = document.getElementById("mensagem").value;
+
+  const mensagemCompleta =
+    `*NOVO CONTATO - YourCode*\n\n` +
+    `*De:* ${nome}\n` +
+    `*Dia de Aula:* ${diaSemana.toUpperCase()}\n\n` +
+    `*Mensagem/Assunto:*\n${mensagem}`;
+
+  const mensagemCodificada = encodeURIComponent(mensagemCompleta);
+
+  const linkWhatsapp = `https://wa.me/${numWhatsapp}?text=${mensagemCodificada}`;
+  window.open(linkWhatsapp, "_blank");
+});

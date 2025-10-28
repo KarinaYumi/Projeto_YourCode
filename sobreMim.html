@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <title>YourCode - Seu guia de Projeto</title>
+  </head>
+  <body>
+    <div class="menuNav">
+      <a href="index.html"
+        ><img src="./img/logo.png" alt="Your Code - Voltar para o início"
+      /></a>
+      <nav>
+        <ul>
+          <li><a href="index.html"> Início </a></li>
+          <li><a href="ideia.html"> A ideia </a></li>
+          <li><a href="design.html"> Design </a></li>
+          <li><a href="obrigatorio.html">Obrigatório</a></li>
+          <li><a href="dicas.html"> Dicas </a></li>
+          <li><a href="sobreMim.html">Sobre mim</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <div class="cardsDicas">
+        <div class="sobreMim">
+          <div class="fotos">
+            <div class="fotosPrimarias">
+              <img class="imgShinzo" src="./img/fotoShinzo.png" />
+
+              <img src="./img/img3x4.jpeg" />
+            </div>
+            <div class="fotosSecundarias">
+              <img src="./img/fotoShinzoCarro.png" />
+            </div>
+          </div>
+          <div class="textoSobreMim">
+            <h1>Um pouco sobre mim</h1>
+            <p>
+              Eaii, me chamo <b>Karina Yumi</b>, tenho 19 anos, moro na zona
+              leste de São Paulo(São Mateus). Tô cursando Ciência da Computação
+              e trabalho como <b>estagiária de desenvolvimento na IBM</b>. Lá,
+              eu me enfio no mundo do código aprendendo todo dia com um time
+              fod@. Mas não é só de código que eu vivo! Eu
+              <b
+                >amo moda, e consequentemente, não vivo sem música (pra mim, os
+                dois andam lado a lado)!</b
+              >
+            </p>
+            <p>
+              Faço uns <b>trampos como modelo</b> as vezes, é quase um hobbie
+              já, e curto demaissss! Se você curte pop, trap e principalmente,
+              rap, provavelmente algum dia vai me encontrar em algum show por
+              aí. Inclusive, o Cena tá aí heinnnn... Quis citar esse meu lado
+              fora o mundo tech, porque sempre tive a visão de tecnologia como a
+              área dos nerdolas que só ficam jogando, sabe? (pov: eu jogava
+              muito antigamente kkkk hoje em dia n tenho tempo mais). E na
+              realidade, uma coisa não tem nada ver com a outra(as vezes, pq
+              realmente tem mt nerdola na área), a
+              <b
+                >área da tecnologia é só mais uma das inúmeras opções que temos
+                de profissão nesse mundão.</b
+              >
+              E pra mim, uma das mais geniais, porque muda o a dinâmica do mundo
+              constantemente
+            </p>
+            <p>
+              Sou meio doida quando o tema é carreira, desde sempre fui assim.
+              Não acredito muito em signos, mas pra quem acredita, sou
+              capricorniana kkkkkk e além disso, gosto muitooo de ajudar os
+              outros com qualquer coisa, então se quiserem conversar sobre
+              carreira, dicas pro mercado de trabalho, etc., estou sempre à
+              disposição! Eu até já criei um pouco de conteúdo no insta e Tiktok
+              falando sobre essas questões, vou deixar o link aqui embaixo.
+            </p>
+            <div class="redesSociais">
+              <a
+                href="https://www.instagram.com/reel/DJHxk1_PpAQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+              >
+                <img src="./img/instaLogo.png"
+              /></a>
+              <a href="https://vm.tiktok.com/ZMApjVfMQ/">
+                <img src="./img/tiktokLogo.png"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="formContato">
+        <h2>Se quiserem entrar em contato comigo para bater um papo</h2>
+        <form class="contatoForm" id="formContato">
+          <label for="nomeAluno">Seu nome:</label>
+          <input
+            type="text"
+            name="nomeAluno"
+            id="nomeAluno"
+            placeholder="pode ser só o primeiro nome"
+            required
+          />
+
+          <label for="DiaSemanaSelecionado">Dia da sua aula:</label>
+          <select name="DiaSemana" id="DiaSemanaSelecionado" required>
+            <option value="" disabled selected>
+              -- Selecione uma opção --
+            </option>
+            <option value="segunda">Segunda</option>
+            <option value="terca">Terça</option>
+            <option value="quarta">Quarta</option>
+            <option value="quinta">Quinta</option>
+            <option value="sexta">Sexta</option>
+          </select>
+
+          <label for="mensagem">Mensagem (Assunto que quer conversar):</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            rows="5"
+            placeholder="Digite sua mensagem aqui..."
+            required
+          ></textarea>
+
+          <button type="submit" class="btnContato">Enviar Mensagem</button>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>Your Code</h3>
+          <p>
+            De dev para dev — Aprendizado, dicas e boas práticas em programação
+            e design.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Links rápidos</h3>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="ideia.html">A ideia</a></li>
+            <li><a href="design.html">Design</a></li>
+            <li><a href="obrigatorio.html">Obrigatório</a></li>
+            <li><a href="dicas.html">Dicas</a></li>
+            <li><a href="sobreMim.html">Sobre mim</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contatos</h3>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/karina-yumi/" target="_blank"
+              ><img src="./img/linkedin.png" alt="Linkedin"
+            /></a>
+            <a href="https://www.instagram.com/yumininaa/" target="_blank"
+              ><img src="./img/instagram.png" alt="Instagram"
+            /></a>
+            <a href="mailto:karinayumifp@gmail.com" target="_blank"
+              ><img src="./img/gmail.png" alt="Gmail"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 YourCode. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <script src="./js/controleObrigatorios.js"></script>
+  </body>
+</html>

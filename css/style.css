@@ -385,13 +385,17 @@ hr {
 .dicaPessoais {
   width: 600px;
   background-color: #f9a826;
-  color: #ffffff;
+  color: #1f1f3e;
   border-radius: 10%;
   padding: 0% 2% 2% 2%;
 }
 
-.dicaPessoais p {
-  color: #1f1f3e;
+.dicaPessoais img {
+  display: block;
+  margin: 15px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5%;
 }
 
 .dicaConteudo {
@@ -440,9 +444,151 @@ hr {
 
 .cardConteudo p {
   font-size: 14px;
-  text-decoration: none;
   color: #ffffff;
   margin: 0%;
+}
+
+.cardConteudo a {
+  text-decoration: none;
+}
+
+/* Sobre mim */
+
+/* Sobre mim */
+
+.sobreMim {
+  display: flex;
+  align-items: flex-start;
+  text-align: center;
+  gap: 100px;
+  border-radius: 7%;
+}
+
+.fotos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fotosPrimarias,
+.fotosSecundarias {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fotosPrimarias img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 0%;
+}
+
+.fotosPrimarias img:last-child {
+  margin-top: 200px;
+}
+
+.fotosPrimarias .imgShinzo {
+  width: 400px;
+  height: 400px;
+}
+
+.fotosSecundarias img {
+  margin: 0%;
+  width: 400px;
+  height: auto;
+  border-radius: 50%;
+  margin-top: -50px;
+}
+
+.sobreMim p {
+  text-align: justify;
+}
+
+.redesSociais {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.sobreMim a {
+  text-decoration: none;
+}
+
+.sobreMim a img {
+  width: 60px;
+  height: 60px;
+  border-radius: 45%;
+}
+
+/* FORMULÁRIO DE CONTATO - ESTILO */
+
+.formContato {
+  margin: 80px auto;
+  max-width: 800px;
+  padding: 40px;
+  background-color: #1f1f3e;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.formContato h2 {
+  color: #fff;
+  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.contatoForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.contatoForm label {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #f9a826;
+}
+
+.contatoForm input[type="text"],
+.contatoForm select,
+.contatoForm textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1em;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", sans-serif;
+}
+
+.contatoForm textarea {
+  resize: vertical;
+}
+
+.btnContato {
+  background-color: #f9a826;
+  color: #ffffff;
+  font-size: 1.3em;
+  font-family: "Bebas Neue", sans-serif;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.7s ease, color 0.7s ease;
+  margin-top: 20px;
+  width: 50%;
+  height: 45px;
+  margin: 0 auto;
+}
+
+.btnContato:hover {
+  background-color: #ffffff;
+  color: #f9a826;
+  border: 2px solid #1f1f3e;
 }
 
 /*Footer */
