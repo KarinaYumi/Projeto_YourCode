@@ -458,7 +458,7 @@ hr {
 
 .sobreMim {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   text-align: center;
   gap: 100px;
   border-radius: 7%;
@@ -661,10 +661,11 @@ hr {
   padding-top: 10px;
 }
 
-/* 1. ESTILOS PARA MOBILE (SMARTPHONES) - Gerado pelo Gemini*/
-/* Aplicados em telas de até 600px de largura */
-
+/* ====================== */
+/* 📱 MOBILE (até 600px) */
+/* ====================== */
 @media (max-width: 600px) {
+
   /* Navbar */
   .menuNav {
     flex-direction: column;
@@ -672,171 +673,291 @@ hr {
     padding: 10px 0;
     position: static;
   }
+
   .menuNav a img {
     position: static;
     margin: 0 auto 10px auto;
+    width: 50px;
   }
+
   .menuNav nav ul {
     flex-direction: column;
     text-align: center;
     width: 100%;
     gap: 10px;
   }
-  .menuNav nav ul li {
-    margin: 5px 0;
-  }
+
   .menuNav nav ul li a {
-    padding: 5px 10px;
     font-size: 1.4em;
   }
 
   h1 {
-    font-size: 40px;
-  }
-  h2 {
-    font-size: 24px;
-  }
-  .container {
-    padding: 3% 2%;
-    margin-top: 20px;
+    font-size: 38px;
   }
 
-  /* ------------------------------------------- */
-  /* FIX ESPECÍFICO: TELA INICIAL (INDEX.HTML) */
-  /* ------------------------------------------- */
+  h2 {
+    font-size: 22px;
+  }
+
+  /* Container geral */
+  .container {
+    padding: 20px 15px;
+    margin-top: 30px;
+  }
+
+  /* Tela inicial */
   .sobreProjeto {
     flex-direction: column;
     gap: 30px;
   }
+
   .contornoTelainicial {
-    width: 70%;
+    width: 80%;
+    max-width: 300px;
     height: auto;
-    max-width: 350px;
     padding: 5%;
   }
 
-  /* ------------------------------------------- */
-  /* FIX ESPECÍFICO: IDEIA.HTML */
-  /* ------------------------------------------- */
+  /* Ideias */
   .secaoPerguntasIdeias {
     grid-template-columns: 1fr;
-    padding: 0 10px;
-  }
-  .dicaVideo iframe {
-    width: 90%;
   }
 
-  /* ------------------------------------------- */
-  /* FIX ESPECÍFICO: DESIGN.HTML */
-  /* ------------------------------------------- */
+  .dicaVideo iframe {
+    width: 100%;
+  }
+
+  /* Design */
   .imgDesign {
-    width: 60%;
+    width: 80%;
   }
+
   .secaoRecomendacoes {
-    gap: 40px;
+    gap: 30px;
   }
+
   .recomendacao {
     width: 100%;
   }
 
-  /* ------------------------------------------- */
-  /* FIX ESPECÍFICO: OBRIGATORIO.HTML */
-  /* ------------------------------------------- */
+  /* Obrigatório */
   .contornoForm {
-    width: 90%;
-    max-width: none;
-    padding: 20px;
+    width: 95%;
+    border-radius: 25px;
+    padding: 25px;
   }
+
   .formsDesenvolvimento {
     flex-direction: column;
   }
 
-  /* ------------------------------------------- */
-  /* FIX ESPECÍFICO: DICAS.HTML */
-  /* ------------------------------------------- */
+  /* Ajustes dos formulários no mobile */
+#obrigatorioProjeto .contornoForm,
+#obrigatorioDesenvolvimento .contornoForm {
+  width: 90%;
+  max-width: 100%;
+  border-radius: 25px;
+  padding: 20px;
+  margin: 15px auto;
+  box-sizing: border-box;
+}
+
+#obrigatorioDesenvolvimento {
+  padding: 20px 10px;
+  border-radius: 20px;
+}
+
+.formsDesenvolvimento {
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Corrige tamanho dos inputs e espaçamento */
+.formObrigatoriedades {
+  width: 100%;
+}
+
+.formObrigatoriedades input[type="checkbox"] {
+  transform: scale(1.4);
+  margin-right: 8px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.formObrigatoriedades label {
+  font-size: 0.95em;
+  word-wrap: break-word;
+}
+
+/* Botão dentro do form */
+.btnForm {
+  width: 70%;
+  font-size: 0.9em;
+  padding: 8px 0;
+  border-radius: 8px;
+}
+
+  /* Dicas */
   .cardsDicas {
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
+    padding: 0;
   }
+
   .dicaIA,
   .dicaConteudo,
   .dicaPessoais {
-    width: 90%;
+    width: 95%;
+    padding: 20px;
     max-height: none;
-    overflow-y: visible;
-    padding: 5% 5% 5% 5%;
+    overflow: visible;
   }
-  .conteudos {
-    justify-content: space-around;
+
+  /* 📸 SOBRE MIM */
+  .sobreMim {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .fotos {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .fotosPrimarias,
+  .fotosSecundarias {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fotosPrimarias img,
+  .fotosSecundarias img {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+  }
+
+  .fotosPrimarias .imgShinzo {
+    width: 250px;
+    height: 250px;
+  }
+
+  .textoSobreMim {
+    text-align: justify;
+    padding: 0 10px;
+  }
+
+  .redesSociais img {
+    width: 45px;
+    height: 45px;
+  }
+
+  /* Formulário de contato */
+  .formContato {
+    width: 90%;
+    padding: 25px;
+  }
+
+  .btnContato {
+    width: 80%;
+    height: 40px;
+    font-size: 1.1em;
   }
 
   /* Footer */
   .footer-container {
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
   }
+
   .footer-section {
     width: 90%;
     text-align: center;
   }
+
   .social-icons {
     justify-content: center;
     display: flex;
   }
 }
 
-/* 2. ESTILOS PARA TABLET */
-/* Aplicados em telas entre 601px e 1024px de largura */
+/* ====================== */
+/* 💻 TABLET (601px–1024px) */
+/* ====================== */
 @media (min-width: 601px) and (max-width: 1024px) {
-  /* Navbar */
+
   .menuNav {
-    padding: 5px 20px;
-    justify-content: space-between;
+    padding: 5px 15px;
   }
+
+  .menuNav nav ul {
+    gap: 40px;
+  }
+
   .menuNav nav ul li a {
-    padding: 10px 15px;
     font-size: 1.5em;
   }
 
-  /* Tela Inicial */
   .sobreProjeto {
     flex-direction: column;
-    gap: 40px;
-  }
-  .contornoTelainicial {
-    width: 50%;
-    max-width: 400px;
-    height: auto;
+    gap: 50px;
   }
 
-  /* Tela Ideia */
-  .secaoPerguntasIdeias {
-    gap: 30px;
+  .contornoTelainicial {
+    width: 60%;
+    max-width: 400px;
   }
+
+  .secaoPerguntasIdeias {
+    gap: 40px;
+  }
+
   .dicaVideo iframe {
     width: 70%;
   }
 
-  /* Tela Dicas */
+  .formsDesenvolvimento {
+    flex-direction: column;
+    gap: 30px; 
+  }
+
   .cardsDicas {
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
   }
+
   .dicaIA,
   .dicaConteudo,
   .dicaPessoais {
     width: 45%;
     max-height: none;
-    overflow-y: visible;
   }
 
-  /* Footer */
-  .footer-container {
-    padding: 0 20px;
-    justify-content: space-around;
+  .sobreMim {
+    flex-direction: column;
+    gap: 40px;
   }
-  .footer-section {
-    flex-basis: 30%;
+
+  .fotosPrimarias img,
+  .fotosSecundarias img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .formContato {
+    width: 80%;
+  }
+
+  .btnContato {
+    width: 60%;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px;
   }
 }
