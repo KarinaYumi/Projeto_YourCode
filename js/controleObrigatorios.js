@@ -15,7 +15,7 @@ for (var i = 0; i < forms.length; i++) {
       message =
         "Ótimo trabalho! Você já fez uma boa parte do projeto. Falta pouco!!";
     } else if (count > 4) {
-      message = "Parabéns! Você concluiu todas as etapas obrigatóriass!";
+      message = "Parabéns! Você concluiu todas as etapas obrigatórias dessa etapa!";
     } else {
       message = "Você não marcou nenhum item!";
     }
